@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Jobin - Home</title>
+    <style>
+        :root {
+            --primary-color: #6D4C41;
+            --accent-color: #A1887F;
+            --background-color: #F5F5DC;
+            --box-bg-color: #FFF8E1;
+            --text-color: #3E2723;
+            --muted-text: #5D4037;
+            --cta-gradient-start: #A1887F;
+            --cta-gradient-end: #D7CCC8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 0.3rem 0.5rem;
+            border-radius: 8px;
+        }
+
+        header nav a:hover {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 4rem 3rem;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+
+        .left, .right {
+            flex: 1;
+            min-width: 320px;
+        }
+
+        .box {
+            background-color: var(--box-bg-color);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+        }
+
+        .box h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--muted-text);
+            margin-bottom: 1.5rem;
+        }
+
+        .box p {
+            color: var(--muted-text);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .traits ul {
+            list-style: square inside;
+            padding-left: 1rem;
+            columns: 2;
+            column-gap: 2rem;
+        }
+
+        .traits ul li {
+            font-size: 1rem;
+            padding: 0.4rem 0;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--accent-color), #FFF3E0);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .cta-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-box a {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .cta-box a:hover {
+            background-color: #5D4037;
+        }
+
+        .image-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(145deg, #fceabb, #f8e1a1);
+            border-radius: 40% 20% 30% 50% / 30% 40% 20% 50%;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-image {
+            width: 100%;
+            max-width: 360px;
+            height: auto;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 2rem;
+            }
+
+            .traits ul {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.15752-9/489134316_1425134038856480_4653780318940902051_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHi2WwYAAzxBsjm1I8ev85ve0c8_yZvQfJ7Rzz_Jm9B8jhqMhUf4HHZJW_KcJDe4XIUlQANFm8aZAKfoGOWlo8E&_nc_ohc=4oLBi7QgpMUQ7kNvwF2eoGA&_nc_oc=AdkCSvQNR9dpcNWNpRfbwXW1YT4I6Xn4Bw8Pd16R8uxGFOhlSbuE81z-Rt74mnSV2QQ&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&oh=03_Q7cD2AH0hpNwCa2xZRLR_yNQvWrjQMfN2GYWtraOXRgJesuWyA&oe=681EAD00" alt="MJ Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="left">
+            <div class="box">
+                <h2><strong>Mark Jobin Velasco</strong></h2>
+                <div class="subtitle">Web Developer | Student</div>
+                <p>Hi! I'm Mark Jobin — a passionate web developer with a flair for design. I thrive on turning ideas into intuitive, pixel-perfect digital experiences.</p>
+                <p>With a strong eye for detail and a collaborative spirit, I enjoy creating user-friendly, aesthetic solutions that leave an impression.</p>
+            </div>
+            <div class="box traits">
+                <h2><strong>Traits</strong></h2>
+                <ul>
+                    <li>Creative Thinker</li>
+                    <li>Detail Oriented</li>
+                    <li>Team Player</li>
+                    <li>Problem Solver</li>
+                    <li>Curious Learner</li>
+                    <li>Time Manager</li>
+                    <li>Open Communicator</li>
+                    <li>Resilient</li>
+                </ul>
+            </div>
+            <div class="cta-box">
+                <h3>🌟 Curious about the journey behind the code?</h3>
+                <p>Discover my story, passions, and what drives me forward in tech and life.</p>
+                <a href="about.html">Get to Know Me</a>
+            </div>
+        </div>
+        <div class="right image-wrapper">
+            <img src="me.png" alt="Mark Jobin" class="profile-image">
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 1rem; background-color: #6D4C41; color: white; font-size: 0.9rem;">
+        © 2025 Mark Jobin Velasco. All rights reserved.
+    </footer>
+    
+</body>
+
+
+
+</html>

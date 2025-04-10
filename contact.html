@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Mark Jobin - Contact</title>
+  <style>
+    :root {
+      --primary-color: #6D4C41;
+      --accent-color: #A1887F;
+      --background-color: #F5F5DC;
+      --box-bg-color: #FFF8E1;
+      --text-color: #3E2723;
+      --muted-text: #5D4037;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: var(--accent-color);
+      color: var(--text-color);
+    }
+
+    main {
+      flex: 1;
+      padding: 4rem 2rem;
+    }
+
+    .contact-section {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contact-section h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      font-variant: small-caps;
+    }
+
+    .contact-grid {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-item {
+      flex: 1;
+      min-width: 220px;
+      margin: 1rem;
+    }
+
+    .contact-item h3 {
+      font-variant: small-caps;
+      margin-bottom: 0.3rem;
+    }
+
+    .contact-item p {
+      color: var(--muted-text);
+    }
+
+    .socials {
+      margin-top: 2rem;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+    }
+
+    .socials img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.3s;
+    }
+
+    .socials img:hover {
+      transform: scale(1.1);
+    }
+
+    .contact-form {
+      margin-top: 3rem;
+      text-align: left;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-form form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      padding: 0.8rem 2rem;
+      border: none;
+      background-color: var(--primary-color);
+      color: white;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #5D4037;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-item {
+        text-align: center;
+      }
+
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.15752-9/489134316_1425134038856480_4653780318940902051_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHi2WwYAAzxBsjm1I8ev85ve0c8_yZvQfJ7Rzz_Jm9B8jhqMhUf4HHZJW_KcJDe4XIUlQANFm8aZAKfoGOWlo8E&_nc_ohc=4oLBi7QgpMUQ7kNvwF2eoGA&_nc_oc=AdkCSvQNR9dpcNWNpRfbwXW1YT4I6Xn4Bw8Pd16R8uxGFOhlSbuE81z-Rt74mnSV2QQ&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&oh=03_Q7cD2AH0hpNwCa2xZRLR_yNQvWrjQMfN2GYWtraOXRgJesuWyA&oe=681EAD00"
+        alt="MJ Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-section">
+      <h1>Reach Out to Me</h1>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h3>Address</h3>
+          <p>Quezon City, Philippines</p>
+        </div>
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p>markjobinvel06@gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <h3>Phone</h3>
+          <p>+63 994 614 7115</p>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=100087049240658" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/jobinqn/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+        </a>
+        <a href="https://x.com/jobin_mark" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/X_logo.jpg" alt="X (Twitter)">
+        </a>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Me a Message</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Mark Jobin Velasco. All rights reserved.
+  </footer>
+</body>
+
+</html>

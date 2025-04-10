@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Jobin - Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #6D4C41;
+            --accent-color: #A1887F;
+            --background-color: #F5F5DC;
+            --card-bg: #FFF8E1;
+            --text-color: #3E2723;
+            --muted-text: #5D4037;
+            --shadow: rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px var(--shadow);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+            flex: 1;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project {
+            width: 350px;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 6px 14px var(--shadow);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px var(--shadow);
+        }
+
+        .project img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover img {
+            transform: scale(1.03);
+        }
+
+        .project-info {
+            padding: 1.2rem 1.5rem;
+        }
+
+        .project-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .project-info p {
+            font-size: 1rem;
+            color: var(--muted-text);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 2rem;
+            font-size: 0.9rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .project img {
+                height: 200px;
+            }
+
+            nav a {
+                margin-left: 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.15752-9/489134316_1425134038856480_4653780318940902051_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHi2WwYAAzxBsjm1I8ev85ve0c8_yZvQfJ7Rzz_Jm9B8jhqMhUf4HHZJW_KcJDe4XIUlQANFm8aZAKfoGOWlo8E&_nc_ohc=4oLBi7QgpMUQ7kNvwF2eoGA&_nc_oc=AdkCSvQNR9dpcNWNpRfbwXW1YT4I6Xn4Bw8Pd16R8uxGFOhlSbuE81z-Rt74mnSV2QQ&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&oh=03_Q7cD2AH0hpNwCa2xZRLR_yNQvWrjQMfN2GYWtraOXRgJesuWyA&oe=681EAD00" alt="Logo">
+            <h2>Mark Jobin</h2>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <a href="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.15752-9/488579152_9676773389052136_7500287528581388011_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEJtikAsbxMS7CvulumFX5mcQPwA7N7VIdxA_ADs3tUh5EBEowIEwXG_0K-_unZf-1g1GdgCE2sY7-9id79IVRZ&_nc_ohc=7wkpCIs0pqYQ7kNvwE_7u1P&_nc_oc=AdltRoP_S5DxAFQQruIteNkVJ62yajA6SDbodNKRsQ0Uo2iSQY1dl-hsYZgTfubxKWo&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&oh=03_Q7cD2AFwzZa-3nb11C--6PsjYM-l1E4i3ZATfTdHNVwOGVbKfQ&oe=681EEABA" target="_blank">
+                    <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.15752-9/488579152_9676773389052136_7500287528581388011_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEJtikAsbxMS7CvulumFX5mcQPwA7N7VIdxA_ADs3tUh5EBEowIEwXG_0K-_unZf-1g1GdgCE2sY7-9id79IVRZ&_nc_ohc=7wkpCIs0pqYQ7kNvwE_7u1P&_nc_oc=AdltRoP_S5DxAFQQruIteNkVJ62yajA6SDbodNKRsQ0Uo2iSQY1dl-hsYZgTfubxKWo&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&oh=03_Q7cD2AFwzZa-3nb11C--6PsjYM-l1E4i3ZATfTdHNVwOGVbKfQ&oe=681EEABA" alt="Project 1">
+                </a>
+                <div class="project-info">
+                    <h2>Personal Website</h2>
+                    <p>A responsive personal site that showcases my background, projects, and contact information.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.15752-9/489075575_992702166381767_6419172854662907037_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFr6r313bYgKTXC7gxbpMRmMBfhCk2cOhIwF-EKTZw6EqatS1PofeOxSrhidZuqhbYTGsPAVQ80grgcwu37wO3N&_nc_ohc=1ajJgJvMqFQQ7kNvwHBkY4g&_nc_oc=AdlbolaIafy3pc_l8B4vFDg7MQmsF_F54GeHfOKaX1DsWbAOk6OVmo96Ofdi3RuA5G8&_nc_zt=23&_nc_ht=scontent.fmnl30-2.fna&oh=03_Q7cD2AFKiMTPEqTkuCRUzZNwNlaOdHl31RsOjC0kQOjbmS7hGg&oe=681F2DBD" target="_blank">
+                    <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.15752-9/489075575_992702166381767_6419172854662907037_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeFr6r313bYgKTXC7gxbpMRmMBfhCk2cOhIwF-EKTZw6EqatS1PofeOxSrhidZuqhbYTGsPAVQ80grgcwu37wO3N&_nc_ohc=1ajJgJvMqFQQ7kNvwHBkY4g&_nc_oc=AdlbolaIafy3pc_l8B4vFDg7MQmsF_F54GeHfOKaX1DsWbAOk6OVmo96Ofdi3RuA5G8&_nc_zt=23&_nc_ht=scontent.fmnl30-2.fna&oh=03_Q7cD2AFKiMTPEqTkuCRUzZNwNlaOdHl31RsOjC0kQOjbmS7hGg&oe=681F2DBD" alt="Project 2">
+                </a>
+                <div class="project-info">
+                    <h2>Space Exploration Site</h2>
+                    <p>A static multi-page site all about galaxies, stars, and more — made with HTML/CSS.</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <a href="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.15752-9/488757784_2167117277072814_1617602561327502592_n.png?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHloR_vUrhg_pSY5C5rzvSt1Lz2BNcCVDPUvPYE1wJUM17JA84VQA75rJKDSpYRewfNmQjOallbAUrBr7iJh3yg&_nc_ohc=GRZivYTbYUMQ7kNvwHhKg63&_nc_oc=AdnlzHZ3dxst_HXt5iBF0ydXsF1OH-W7oMxn3Cwdahg_dllkY1CWSQQ795vD_viZgmA&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&oh=03_Q7cD2AGwRcT3NqJSmjPxyONxletrw27uhyGqXbH9--eCwcaYtg&oe=681ED169" target="_blank">
+                    <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.15752-9/488757784_2167117277072814_1617602561327502592_n.png?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHloR_vUrhg_pSY5C5rzvSt1Lz2BNcCVDPUvPYE1wJUM17JA84VQA75rJKDSpYRewfNmQjOallbAUrBr7iJh3yg&_nc_ohc=GRZivYTbYUMQ7kNvwHhKg63&_nc_oc=AdnlzHZ3dxst_HXt5iBF0ydXsF1OH-W7oMxn3Cwdahg_dllkY1CWSQQ795vD_viZgmA&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&oh=03_Q7cD2AGwRcT3NqJSmjPxyONxletrw27uhyGqXbH9--eCwcaYtg&oe=681ED169" alt="Project 3">
+                </a>
+                <div class="project-info">
+                    <h2>E-commerce Website</h2>
+                    <p>Currently developing a dynamic and user-friendly e-commerce platform with smooth navigation and secure checkout features.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 Mark Jobin Velasco. All rights reserved.
+    </footer>
+</body>
+
+</html>

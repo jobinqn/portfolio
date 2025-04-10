@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Mark Jobin</title>
+    <style>
+        :root {
+            --primary-color: #6D4C41;
+            --accent-color: #A1887F;
+            --background-color: #F5F5DC;
+            --box-bg-color: #FFF8E1;
+            --text-color: #3E2723;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.2rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 0.3rem 0.5rem;
+            border-radius: 8px;
+        }
+
+        header nav a:hover {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background-color: var(--box-bg-color);
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .about-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 2rem auto;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border: 6px solid var(--background-color);
+            background-color: white;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio-text {
+            text-align: center;
+            padding: 0 1.5rem;
+        }
+
+        .bio-text p {
+            margin-bottom: 1.2rem;
+            color: #5D4037;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            header nav {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .container {
+                margin: 2rem 1rem;
+                padding: 2rem 1rem;
+            }
+
+            .about-img {
+                width: 140px;
+                height: 140px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.15752-9/489134316_1425134038856480_4653780318940902051_n.png?_nc_cat=103&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHi2WwYAAzxBsjm1I8ev85ve0c8_yZvQfJ7Rzz_Jm9B8jhqMhUf4HHZJW_KcJDe4XIUlQANFm8aZAKfoGOWlo8E&_nc_ohc=4oLBi7QgpMUQ7kNvwF2eoGA&_nc_oc=AdkCSvQNR9dpcNWNpRfbwXW1YT4I6Xn4Bw8Pd16R8uxGFOhlSbuE81z-Rt74mnSV2QQ&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&oh=03_Q7cD2AH0hpNwCa2xZRLR_yNQvWrjQMfN2GYWtraOXRgJesuWyA&oe=681EAD00" alt="MJ Logo">
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <img src="me.png" alt="Mark Jobin" class="about-img">
+        <h1>About Me</h1>
+        <div class="bio-text">
+            <p>Hey! I'm <strong>Mark Jobin Velasco</strong>, born on <strong>June 18, 2006</strong>, and I proudly call <strong>Quezon City, Philippines</strong> my home.</p>
+            <p>I'm currently a student at <strong>Our Lady of Fatima University</strong> in Quezon City, where I’m nurturing my passion for web development and all things tech.</p>
+            <p>Ever since I started diving into code, I’ve found myself fascinated by how creativity meets logic to build amazing digital experiences. I’m someone who’s always learning, constantly exploring ways to improve, and never afraid to try something new.</p>
+            <p>Aside from coding, I love design, enjoy collaborating with others, and always look forward to growing both personally and professionally. Whether it's brainstorming ideas or polishing up pixel-perfect designs, I'm all in.</p>
+        
+            <p>Lately, I've realized how much I've grown not just in technical skills but in confidence too. From struggling with simple layouts to building full pages from scratch, it's been a learning journey filled with trial and error. I’ve learned to be patient, to think creatively, and to break problems into smaller steps. Looking forward, I want to keep building cool and useful projects, learn JavaScript, and eventually get into full-stack development. My goal is to become someone who can turn ideas into real, working websites that help people — and to keep having fun while doing it.</p>
+        </div>
+    </div>
+    
+    <footer style="text-align: center; padding: 1rem; background-color: #6D4C41; color: white; font-size: 0.9rem;">
+        © 2025 Mark Jobin Velasco. All rights reserved.
+    </footer>
+
+</body>
+
+
+
+</html>
